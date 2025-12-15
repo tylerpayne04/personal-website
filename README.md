@@ -1,42 +1,16 @@
-# Personal Website
+# React + Vite
 
-This is a personal website project designed to showcase key information, skills, and projects. The website includes several pages that provide insights into the creator's background, projects, and contact information.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Structure
+Currently, two official plugins are available:
 
-```
-personal-website
-├── index.html        # Main entry point of the personal website
-├── about.html        # Information about the creator
-├── projects.html     # Showcase of projects
-├── contact.html      # Contact information and form
-├── css
-│   └── styles.css    # Styles for the website
-├── js
-│   └── main.js       # JavaScript for interactivity
-├── assets
-│   └── documents
-│       └── resume.pdf # Resume in PDF format
-└── README.md         # Documentation for the project
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Setup Instructions
+## React Compiler
 
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in a web browser to view the website.
-3. Customize the content in `about.html`, `projects.html`, and `contact.html` as needed.
-4. Update the `styles.css` file to modify the appearance of the website.
-5. Add any necessary JavaScript functionality in `main.js`.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Features
+## Expanding the ESLint configuration
 
-- A homepage that links to all sections of the website.
-- An about page detailing personal background and interests.
-- A projects page showcasing various projects with descriptions and links.
-- A contact page for visitors to reach out.
-- Responsive design with custom styles.
-- Interactive elements powered by JavaScript.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
